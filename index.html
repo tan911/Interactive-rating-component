@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <section id="rating-section">
+      <div class="container rate--modal">
+        <div class="star-container">
+          <img src="images/icon-star.svg" alt="star" />
+        </div>
+        <h1 class="rating-title">How did we do?</h1>
+        <p class="rating-description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="rate-number--container">
+          <button class="number-rate">1</button>
+          <button class="number-rate">2</button>
+          <button class="number-rate">3</button>
+          <button class="number-rate">4</button>
+          <button class="number-rate">5</button>
+        </div>
+
+        <button class="submit-btn">Submit</button>
+      </div>
+
+      <div class="container rating--modal hidden">
+        <div class="thumbnail-container">
+          <img
+            src="images/illustration-thank-you.svg"
+            alt="thank you machine"
+          />
+        </div>
+        <div class="rate">
+          <p>You selected <span class="selected--rate">4</span> out 5</p>
+        </div>
+        <h1 class="rating-title-modal">Thank you!</h1>
+        <p class="rating-description-modal">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
