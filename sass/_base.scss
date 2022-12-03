@@ -130,6 +130,12 @@ body {
   align-items: center;
 }
 
+main {
+  @include respond(phone) {
+    width: 90%;
+  }
+}
+
 p {
   font-size: 0.938rem;
 }

@@ -91,11 +91,18 @@ body {
   justify-content: center;
   align-items: center; }
 
+@media (max-width: 25em) {
+  main {
+    width: 90%; } }
+
 p {
   font-size: 0.938rem; }
 
 .hidden {
   display: none; }
+
+form {
+  width: 100%; }
 
 .btn {
   width: 100%;
@@ -120,13 +127,12 @@ p {
   border-radius: 35px; }
   @media (max-width: 25em) {
     .card {
-      width: 90%;
       border-radius: 20px; } }
   .card__inner {
-    margin: 2rem; }
+    padding: 2em; }
     @media (max-width: 25em) {
       .card__inner {
-        margin: 1.5em; } }
+        padding: 1.5em; } }
     .card__inner--rate {
       text-align: left; }
     .card__inner--message {
@@ -150,12 +156,15 @@ p {
   .card__detail {
     color: #7c8798; }
   .card__rates {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     gap: 1em;
+    padding: 0;
     margin: 1.5em 0;
-    width: 100%; }
+    border: none; }
     @media (max-width: 25em) {
       .card__rates {
         gap: 0.5em; } }
@@ -163,7 +172,6 @@ p {
     width: 100%;
     background-color: #121417;
     font-weight: bold;
-    text-align: center;
     padding: 1em;
     border: none;
     border-radius: 50%;
@@ -181,6 +189,8 @@ p {
       color: white; }
     .card__rate:active {
       background-color: #959eac; }
+    .card__rate input {
+      display: none; }
   .card__img2 {
     display: flex;
     justify-content: center; }

@@ -5,7 +5,8 @@ const ratedCard = document.querySelector('.card__inner--message');
 const rateBtn = document.querySelectorAll('.card__rate');
 const submitBtn = document.querySelector('.btn');
 
-const ratedModal = function () {
+const ratedModal = function (e) {
+  e.preventDefault();
   ratedCard.classList.remove('hidden');
   rateCard.classList.add('hidden');
 };

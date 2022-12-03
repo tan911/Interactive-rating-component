@@ -5,15 +5,14 @@
   border-radius: 35px;
 
   @include respond(phone) {
-    width: 90%;
     border-radius: 20px;
   }
 
   &__inner {
-    margin: 2rem;
+    padding: 2em;
 
     @include respond(phone) {
-      margin: 1.5em;
+      padding: 1.5em;
     }
 
     &--rate {
@@ -53,12 +52,15 @@
   }
 
   &__rates {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     gap: 1em;
+    padding: 0;
     margin: 1.5em 0;
-    width: 100%;
+    border: none;
 
     @include respond(phone) {
       gap: 0.5em;
@@ -69,7 +71,6 @@
     width: 100%;
     background-color: $color-tertiary-dark;
     font-weight: bold;
-    text-align: center;
     padding: 1em;
     border: none;
     border-radius: 50%;
@@ -92,6 +93,10 @@
 
     &:active {
       background-color: $color-secondary-light;
+    }
+
+    & input {
+      display: none;
     }
   }
 
