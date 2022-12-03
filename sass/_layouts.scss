@@ -77,8 +77,12 @@
     cursor: pointer;
     @include style-text-color($color-secondary-dark);
 
-    @include respond(phone) {
-      padding: 0.5em 1em;
+    @include respond(phone-s) {
+      padding: 0.8em;
+    }
+
+    @include respond(phone-xs) {
+      padding: 0.6em;
     }
 
     &:hover {

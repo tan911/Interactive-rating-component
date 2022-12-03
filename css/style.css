@@ -8,23 +8,20 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /*
     2. Remove default margin
   */
 * {
-  margin: 0;
-}
+  margin: 0; }
 
 /*
     3. Allow percentage-based heights in the application
   */
 html,
 body {
-  height: 100%;
-}
+  height: 100%; }
 
 /*
     Typographic tweaks!
@@ -33,8 +30,7 @@ body {
   */
 body {
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
+  -webkit-font-smoothing: antialiased; }
 
 /*
     6. Improve media defaults
@@ -45,8 +41,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 /*
     7. Remove built-in form typography styles
@@ -55,8 +50,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
-}
+  font: inherit; }
 
 /*
     8. Avoid text overflows
@@ -68,50 +62,44 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
-}
+  overflow-wrap: break-word; }
 
 /*
     9. Create a root stacking context
   */
 #root,
 #__next {
-  isolation: isolate;
-}
+  isolation: isolate; }
 
 @font-face {
   font-family: customFontRegular;
-  src: url("../font/Overpass-Regular.ttf");
-}
+  src: url("../font/Overpass-Regular.ttf"); }
+
 @font-face {
   font-family: customFontBold;
-  src: url("../font/Overpass-Bold.ttf");
-}
+  src: url("../font/Overpass-Bold.ttf"); }
+
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.6rem rgba(149, 158, 172, 0.65);
-}
+  box-shadow: 0 0 0 0.6rem rgba(149, 158, 172, 0.65); }
 
 body {
-  background-color: hsl(216deg, 12%, 8%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: #121417;
+  color: white;
   font-family: customFontRegular, sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 p {
-  font-size: 0.938rem;
-}
+  font-size: 0.938rem; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 .btn {
   width: 100%;
-  background-color: hsl(25deg, 97%, 53%);
+  background-color: #fb7413;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -120,119 +108,92 @@ p {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s;
-  color: hsl(0deg, 0%, 100%);
-}
-.btn:hover {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(25deg, 97%, 53%);
-}
+  color: white; }
+  .btn:hover {
+    background-color: white;
+    color: #fb7413; }
 
 .card {
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: #252d37;
   width: 100%;
   max-width: 25rem;
-  border-radius: 35px;
-}
-@media (max-width: 25em) {
-  .card {
-    width: 90%;
-    border-radius: 20px;
-  }
-}
-.card__inner {
-  margin: 2rem;
-}
-@media (max-width: 25em) {
+  border-radius: 35px; }
+  @media (max-width: 25em) {
+    .card {
+      width: 90%;
+      border-radius: 20px; } }
   .card__inner {
-    margin: 1.5em;
-  }
-}
-.card__inner--rate {
-  text-align: left;
-}
-.card__inner--message {
-  text-align: center;
-}
-.card__img {
-  display: inline-block;
-  background-color: hsl(216deg, 12%, 8%);
-  padding: 1em;
-  border-radius: 50%;
-}
-@media (max-width: 25em) {
+    margin: 2rem; }
+    @media (max-width: 25em) {
+      .card__inner {
+        margin: 1.5em; } }
+    .card__inner--rate {
+      text-align: left; }
+    .card__inner--message {
+      text-align: center; }
   .card__img {
-    padding: 0.8em;
-  }
-}
-.card__info {
-  margin: 1em 0;
-}
-.card__title {
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.375rem;
-  font-family: customFontBold, sans-serif;
-  letter-spacing: 1px;
-  margin: 0.5em 0;
-}
-.card__detail {
-  color: hsl(216deg, 12%, 54%);
-}
-.card__rates {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1em;
-  margin: 1.5em 0;
-  width: 100%;
-}
-@media (max-width: 25em) {
+    display: inline-block;
+    background-color: #121417;
+    padding: 1em;
+    border-radius: 50%; }
+    @media (max-width: 25em) {
+      .card__img {
+        padding: 0.8em; } }
+  .card__info {
+    margin: 1em 0; }
+  .card__title {
+    color: white;
+    font-size: 1.375rem;
+    font-family: customFontBold, sans-serif;
+    letter-spacing: 1px;
+    margin: 0.5em 0; }
+  .card__detail {
+    color: #7c8798; }
   .card__rates {
-    gap: 0.5em;
-  }
-}
-.card__rate {
-  width: 100%;
-  background-color: hsl(216deg, 12%, 8%);
-  font-weight: bold;
-  text-align: center;
-  padding: 1em;
-  border: none;
-  border-radius: 50%;
-  transition: all 0.3s;
-  cursor: pointer;
-  color: hsl(216deg, 12%, 54%);
-}
-@media (max-width: 25em) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin: 1.5em 0;
+    width: 100%; }
+    @media (max-width: 25em) {
+      .card__rates {
+        gap: 0.5em; } }
   .card__rate {
+    width: 100%;
+    background-color: #121417;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #7c8798; }
+    @media (max-width: 22.625em) {
+      .card__rate {
+        padding: 0.8em; } }
+    @media (max-width: 20.9375em) {
+      .card__rate {
+        padding: 0.6em; } }
+    .card__rate:hover {
+      background-color: #fb7413;
+      color: white; }
+    .card__rate:active {
+      background-color: #959eac; }
+  .card__img2 {
+    display: flex;
+    justify-content: center; }
+  .card__rated {
+    display: inline-block;
+    background-color: #121417;
+    color: #fb7413;
+    margin: 1.5em 0;
     padding: 0.5em 1em;
-  }
-}
-.card__rate:hover {
-  background-color: hsl(25deg, 97%, 53%);
-  color: hsl(0deg, 0%, 100%);
-}
-.card__rate:active {
-  background-color: hsl(217deg, 12%, 63%);
-}
-.card__img2 {
-  display: flex;
-  justify-content: center;
-}
-.card__rated {
-  display: inline-block;
-  background-color: hsl(216deg, 12%, 8%);
-  color: hsl(25deg, 97%, 53%);
-  margin: 1.5em 0;
-  padding: 0.5em 1em;
-  border-radius: 30px;
-}
-.card__message1 {
-  font-size: 1.375rem;
-  font-family: customFontBold, sans-serif;
-}
-.card__message2 {
-  margin: 1em 0;
-  color: hsl(216deg, 12%, 54%);
-}
-
-/*# sourceMappingURL=style.css.map */
+    border-radius: 30px; }
+  .card__message1 {
+    font-size: 1.375rem;
+    font-family: customFontBold, sans-serif; }
+  .card__message2 {
+    margin: 1em 0;
+    color: #7c8798; }

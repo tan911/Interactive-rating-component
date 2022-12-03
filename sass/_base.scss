@@ -97,6 +97,18 @@ $color-tertiary-dark: hsl(216, 12%, 8%);
 }
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == phone-xs {
+    @media (max-width: 20.9375em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-s {
+    @media (max-width: 22.625em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == phone {
     @media (max-width: 25em) {
       @content;

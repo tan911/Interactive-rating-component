@@ -4,10 +4,10 @@
   "description": "![Design preview for the Interactive rating component coding challenge](./images/desktop-preview.jpg)",
   "main": "script.js",
   "scripts": {
-    "watch:sass": "sass --watch sass/main.scss:css/style.css",
+    "watch:sass": "node-sass sass/main.scss css/style.css --watch",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "sass sass/main.scss:css/style.comp.css",
+    "compile:sass": "node-sass sass/main.scss css/style.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.css  -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.min.css --output-style compressed",
     "build": "npm-run-all compile:sass prefix:css compress:css"
