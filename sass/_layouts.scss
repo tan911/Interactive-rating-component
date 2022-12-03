@@ -1,0 +1,117 @@
+.card {
+  background-color: $color-tertiary-light;
+  width: 100%;
+  max-width: 25rem;
+  border-radius: 35px;
+
+  @include respond(phone) {
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  &__inner {
+    margin: 2rem;
+
+    @include respond(phone) {
+      margin: 1.5em;
+    }
+
+    &--rate {
+      text-align: left;
+    }
+
+    &--message {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    display: inline-block;
+    background-color: $color-tertiary-dark;
+    padding: 1em;
+    border-radius: 50%;
+
+    @include respond(phone) {
+      padding: 0.8em;
+    }
+  }
+
+  &__info {
+    margin: 1em 0;
+  }
+
+  &__title {
+    color: $color-primary-light;
+    font-size: 1.375rem;
+    font-family: customFontBold, sans-serif;
+    letter-spacing: 1px;
+    margin: 0.5em 0;
+  }
+
+  &__detail {
+    color: $color-secondary-dark;
+  }
+
+  &__rates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin: 1.5em 0;
+    width: 100%;
+
+    @include respond(phone) {
+      gap: 0.5em;
+    }
+  }
+
+  &__rate {
+    width: 100%;
+    background-color: $color-tertiary-dark;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
+    @include style-text-color($color-secondary-dark);
+
+    @include respond(phone) {
+      padding: 0.5em 1em;
+    }
+
+    &:hover {
+      background-color: $color-primary-dark;
+      @include style-text-color($color-primary-light);
+    }
+
+    &:active {
+      background-color: $color-secondary-light;
+    }
+  }
+
+  &__img2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__rated {
+    display: inline-block;
+    background-color: $color-tertiary-dark;
+    color: $color-primary-dark;
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+  }
+
+  &__message1 {
+    font-size: 1.375rem;
+    font-family: customFontBold, sans-serif;
+  }
+
+  &__message2 {
+    margin: 1em 0;
+    color: $color-secondary-dark;
+  }
+}
