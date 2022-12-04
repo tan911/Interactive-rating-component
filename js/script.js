@@ -17,4 +17,11 @@ for (let i = 0; i < rateBtn.length; i++) {
   });
 }
 
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    ratedCard.classList.remove('hidden');
+    rateCard.classList.add('hidden');
+  }
+});
+
 submitBtn.addEventListener('click', ratedModal);
